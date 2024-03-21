@@ -14,11 +14,11 @@
     <div class="row">
 
       <!-- Houses -->
-      <div *ngFor="let house of houses"  class="col-4 mb-2">
+      <div *ngFor="let house of houses" class="col-4 mb-2">
 
         <div class="card">
-<!--           <img src="..." class="card-img-top">-->
-          <app-minimap [lngLat]="house.lngLat" />
+          <!--           <img src="..." class="card-img-top">-->
+          <app-minimap [lngLat]="house.lngLat"/>
 
           <div class="card-body">
             <h5 class="card-title">{{ house.title }}</h5>
@@ -27,13 +27,17 @@
         </div>
 
       </div>
+      <div class="col-4 mb-2">
+        <div class="card">
+          <div class="d-flex justify-content-center m-5">
+            <counter-alone [counter]="50"></counter-alone>
+          </div>
+        </div>
 
+
+      </div>
 
 
     </div>
-
-
-
   </div>
-</div>
 

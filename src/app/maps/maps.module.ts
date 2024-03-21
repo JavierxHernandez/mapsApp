@@ -7,8 +7,9 @@ import { MapsRoutingModule } from './maps-routing.module';
 import { MarkersPageComponent } from './pages/markers-page/markers-page.component';
 import { MinimapComponent } from './components/minimap/minimap.component';
 import { PropertiesPageComponent } from './pages/properties-page/properties-page.component';
-import { SideMenuComponent } from './components/side-menu/side-menu.component';
 import { ZoomPageComponent } from './pages/zoom-page/zoom-page.component';
+import {CounterAloneComponent} from "../alone/components/counter-alone/counter-alone.component";
+import {SideMenuComponent} from "../alone/components/side-menu/side-menu.component";
 
 
 
@@ -19,12 +20,13 @@ import { ZoomPageComponent } from './pages/zoom-page/zoom-page.component';
     MarkersPageComponent,
     MinimapComponent,
     PropertiesPageComponent,
-    SideMenuComponent,
     ZoomPageComponent,
   ],
   imports: [
     CommonModule,
-    MapsRoutingModule
+    CounterAloneComponent,
+    MapsRoutingModule,
+    SideMenuComponent
   ]
 })
 export class MapsModule { }
